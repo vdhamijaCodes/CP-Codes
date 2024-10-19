@@ -1,0 +1,27 @@
+/*
+Code Chef Problem":
+
+Distinct Pair Sums
+ Link: https://www.codechef.com/practice/course/1to2stars/LP1TO201/problems/MANYSUMS?tab=statement
+
+*/
+
+#include <stdio.h>
+
+int main() {
+	// your code goes here
+	int t, l, r;
+	scanf("%d", &t);
+	while(t--){
+	    scanf("%d %d", &l, &r);
+	    if(r == l){
+	        printf("%d\n", 1);
+	    }
+	    else{
+	        int n = (r - l)+1;
+	        printf("%d\n", n + (n-1));
+	    }
+	}
+
+}
+
